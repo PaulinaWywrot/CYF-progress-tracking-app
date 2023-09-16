@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "header": "Intro to Digital Content",
+    "type": "Combined",
+    "length": "Self Paced",
+    "body": "This online, self-paced course gives trainees a basic understanding of JavaScript, HTML & CSS, unit tests, and guides them to building their first simple website. Completion of this course is required to access the full course."
+  },
+
+  {
+    "id": 1,
+    "header": "Fundamentals",
+    "type": "Combined",
+    "length": "3 Weeks",
+    "body": "This module is a three week immersion into the core principles of digital product development. Trainees work through the key stages of development: Requirements, Iteration, and Delivery. Trainees work in teams to discover requirements and express them as user stories. Trainees iterate on their work and then ship their websites to production"
+  },
+
+  {
+    "id": 2,
+    "header": "Personal Development",
+    "type": "Combined",
+    "length": "1 Week"
+  }
+]

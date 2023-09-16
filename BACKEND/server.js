@@ -1,12 +1,14 @@
 const express = require("express");
 const app = express();
 
+const modules = require("./modules");
+
 const port = process.env.PORT || 8000;
 
 app.use("/", (req, res) => {
-  res.status(200).send("Hello World!");
+  res.status(200).send(modules);
 });
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log("Server is live on port: " + (process.env.PORT || 5000));
+app.listen(port, () => {
+  console.log("Server is live on port: " + port);
 });
