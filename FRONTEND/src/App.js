@@ -3,6 +3,7 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar";
 import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -33,6 +34,7 @@ const App = () => {
 
       <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} user={user} />
       <Main modules={modules} />
+      <Footer />
     </div>
   );
 };
