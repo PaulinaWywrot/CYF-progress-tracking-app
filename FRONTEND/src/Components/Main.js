@@ -1,5 +1,14 @@
+import modules from "./BACKEND/modules.json";
+import OneModule from "./OneModule";
+
 const Main = () => {
-  return <h2 className="modules-title">MODULES</h2>;
+  return (
+    <div className="oneModule">
+      {modules.map((module) => (
+        <OneModule key={module.id} video={video} />
+      ))}
+    </div>
+  );
 };
 
 export default Main;
