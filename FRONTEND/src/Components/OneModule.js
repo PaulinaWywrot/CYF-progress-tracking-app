@@ -1,7 +1,7 @@
-const OneModule = () => {
+const OneModule = ({ module }) => {
   return (
     <div>
-      <p></p>
+      <h3>{module.header}</h3>
     </div>
   );
 };
