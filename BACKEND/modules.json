@@ -17,8 +17,25 @@
 
   {
     "id": 2,
-    "header": "Personal Development",
-    "type": "Combined",
-    "length": "1 Week"
+    "header": "Induction and Git",
+    "type": "Personal Development",
+    "length": "1 Week",
+    "body": "This week inducts trainees to the Software Development Course and then introduces trainees to Git and Github using Github Desktop. This is a key skill for all developers and is also how we do our coursework at CodeYourFuture."
+  },
+
+  {
+    "id": 3,
+    "header": "HTML and CSS",
+    "type": "Tech",
+    "length": "4 Weeks",
+    "body": "Introducing Front End. What is frontend? It's another word for the presentational part of a piece of software. In terms of web development we're talking about 'what you see' when you go to any website. Think of it like this: if a webpage were a person, the HTML would be the skeleton and CSS the skin and clothing!"
+  },
+
+  {
+    "id": 4,
+    "header": "JavaScript",
+    "type": "Tech",
+    "length": "4 Weeks",
+    "body": "In this module you'll make a start into the wonderful world of programming. We will be using the programming language JavaScript to do so. You'll learn about the basic building blocks of programming: loops, functions, control flow and more. Consider these as the ABC's of programming, without them it's impossible to write working software!"
   }
 ]
