@@ -16,7 +16,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
         <button onClick={toggleModal}>SIGN UP</button>
         <button>LOGIN</button>
       </nav>
-      <Modal />
+      {modalIsOpen && <Modal />}
     </>
   );
 };

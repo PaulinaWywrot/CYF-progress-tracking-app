@@ -10,13 +10,11 @@ const App = () => {
 
   return (
     <div className="App">
-
       <header>
         <h1>MODULES</h1>
       </header>
 
       <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
-
       <Main />
     </div>
   );

@@ -6,12 +6,15 @@ const Modal = ({ closeModal, deleteFunc }) => {
   return (
     <div className="modal">
       <div className="modal__container">
-        <h3>Register form</h3>
-        <div>
+        <div className="modal__header">
+          <h3>Register form</h3>
+          <button className="x-button">X</button>
+        </div>
+        <div className="modal__form">
           <input type="text" name="" id="" />
           <input type="password" />
           <button
-            className="btn btn-danger"
+            className="btn btn-primary"
             onClick={() => {
               deleteFunc();
               closeModal(false);
