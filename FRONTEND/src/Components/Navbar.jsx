@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn, user }) => {
           </div>
         </div>
       </nav>
-      {modalIsOpen && <Modal />}
+      {modalIsOpen && <Modal closeModal={toggleModal} />}
     </>
   );
 };
