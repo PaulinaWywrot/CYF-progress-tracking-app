@@ -33,8 +33,30 @@
   align-items: center;
 }
 
-.modal__container div {
+.modal__header {
+  display: flex;
+}
+.modal__form {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+.x-button {
+  color: grey;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in;
+  background-color: #fff;
+}
+
+.x-button:hover {
+  opacity: 0.5;
+}
+
+.x-button:active {
+  color: black;
 }

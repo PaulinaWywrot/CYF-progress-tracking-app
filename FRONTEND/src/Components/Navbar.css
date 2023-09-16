@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  padding: 10px 0; /* Vertical and horizontal padding */
+}
+
+/* Navbar content container */
+.navbar-content {
+  display: flex; /* Display children in a row */
+  justify-content: space-between; /* Space out the children horizontally */
+  align-items: center; /* Vertically center align items */
+  max-width: 1200px; /* Limit the content width */
+  margin: 0 auto; /* Center align the content horizontally */
+  padding: 0 20px; /* Add padding to the sides */
+}
+
+/* Navbar brand text */
+.navbar-brand {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Make it bold */
+  color: #333; /* Text color */
+}
+
+/* Navbar buttons container */
+.navbar-buttons {
+  display: flex; /* Display buttons in a row */
+  gap: 10px; /* Space out the buttons */
+}
+
+/* Navbar buttons */
+.navbar-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button borders */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style the button on hover */
+.navbar-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}

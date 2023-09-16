@@ -7,7 +7,7 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
-  const [user, setUser] = useState({ type: "", name: "", password: "" });
+  const [user, setUser] = useState({ type: "", name: "Alex", password: "" });
   const [modules, setModules] = useState([]);
   useEffect(() => {
     fetch(`http://localhost:8000/`)
@@ -32,8 +32,7 @@ const App = () => {
         <h1>MODULES</h1>
       </header>
 
-      <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
-
+      <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} user={user} />
       <Main modules={modules} />
       <Footer />
     </div>
