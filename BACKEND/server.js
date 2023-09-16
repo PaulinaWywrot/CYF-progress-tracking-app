@@ -4,7 +4,7 @@ const app = express();
 const modules = require("./modules");
 
 const port = process.env.PORT || 8000;
-
+app.use(express.json());
 app.use("/", (req, res) => {
   res.status(200).send(modules);
 });
