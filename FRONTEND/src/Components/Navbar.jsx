@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
 import Modal from "../UIElements/Modal";
+import "./Navbar.css"; // Import your CSS file for styling
 
-const Navbar = ({ isLoggedIn, setLoggedIn }) => {
+const Navbar = ({ isLoggedIn, setLoggedIn, user }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -11,10 +11,16 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <p>Hello, </p>
-        <button onClick={toggleModal}>SIGN UP</button>
-        <button>LOGIN</button>
+      <nav className="navbar">
+        <div className="navbar-content">
+          {user.name && <p>{"Hello, " + user.name}</p>}
+          <div className="navbar-buttons">
+            <button className="navbar-button" onClick={toggleModal}>
+              SIGN UP
+            </button>
+            <button className="navbar-button">LOGIN</button>
+          </div>
+        </div>
       </nav>
       {modalIsOpen && <Modal />}
     </>
